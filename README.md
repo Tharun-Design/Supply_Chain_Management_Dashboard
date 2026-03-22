@@ -1,165 +1,104 @@
-# 🚚 Supply Chain Management Dashboard | Power BI
+# Supply Chain Management Dashboard — Revenue Generation and Customers
 
-## 📊 Project Overview
+## Overview
 
-This project presents an interactive **Supply Chain Management Dashboard** developed using Microsoft Power BI to analyze revenue generation, profit performance, order distribution, and warehouse efficiency.
-
-The dashboard enables business stakeholders to monitor operational performance, evaluate sales channels, and optimize supply chain decisions using real-time KPIs and trend analysis.
+This project delivers an end-to-end supply chain analytics solution built in Power BI. The dashboard provides a unified view of revenue generation, profit performance, warehouse operations, and sales channel effectiveness. It is designed to help operations and business teams monitor key supply chain metrics, identify bottlenecks, and optimize inventory and delivery performance.
 
 ---
 
-## 🎯 Business Objective
+## Objectives
 
-Supply chain operations involve multiple warehouses, sales channels, and distribution networks. 
-
-The objective of this dashboard is to:
-
-- Monitor overall revenue and profit performance
-- Analyze warehouse-level efficiency
-- Compare sales channel contribution
-- Track monthly order trends
-- Evaluate delivery performance
+- Track total revenue, profit, and unit sales across the full supply chain
+- Analyze warehouse-level performance to identify high-output and underperforming locations
+- Evaluate sales channel contribution across In-Store, Online, Distributor, and Wholesale
+- Monitor monthly order trends to detect seasonality and demand patterns
+- Measure average delivery days as an operational efficiency indicator
 
 ---
 
-## 📂 Project File
+## Dashboard Highlights
 
-- `dashboard_2.pbix` → Power BI Dashboard File
-
----
-
-## 📈 Key Performance Indicators (KPIs)
-
-The dashboard tracks the following major metrics:
-
-- 💰 **Total Revenue:** 82.69M
-- 📊 **Total Profit:** 31M
-- 📦 **Total Units Sold:** 36K
-- 📉 **Average Profit per Order:** 3.86K
-- 🚚 **Average Delivery Days:** 15.17
+| Metric | Value |
+|---|---|
+| Total Revenue | 82.69M |
+| Total Profit | 31M |
+| Average Profit per Order | 3.86K |
+| Total Units Sold | 36K |
+| Average Delivery Days | 15.17 |
+| Total Orders | 7,991 |
 
 ---
 
-## 📅 Monthly Revenue Trend Analysis
+## Key Insights
 
-- Strong revenue growth observed from June to November.
-- Peak revenue recorded in November (8.7M).
-- Stable high performance in Q3 and Q4.
-- Early-year dip in February and March.
+- **Revenue Trend:** Monthly revenue dipped to a low of 4.5M in March before recovering steadily. Peak revenue was recorded in June at 8.1M and October at 8.7M, indicating strong mid-year and end-of-year demand cycles.
 
-This helps identify seasonal trends and operational efficiency cycles.
+- **Warehouse Performance:** WARE-NMK1003 was the highest-performing warehouse with 2,505 orders, 11,351 units, and revenue of 2.61M. WARE-MKL1006 recorded the highest average order value despite fewer total orders (857), generating 87.37L in revenue with a profit of 32.71L.
 
----
+- **Sales Channel Analysis:** Online was the dominant channel with 41.27% of total orders (3,300 orders), followed by In-Store at 30.35% (2,430 orders). Distributor and Wholesale channels together contributed approximately 28% of order volume. In-Store generated the highest revenue at 3.40M among all channels.
 
-## 🏬 Warehouse Performance Analysis
+- **Monthly Orders:** Order volume showed a consistent upward trend from March through August, peaking in the July–October period with 750–800 orders per month. This suggests peak operational load during Q3 and early Q4.
 
-The dashboard analyzes:
+- **Discount Strategy:** Average discount remained consistent at 0.11–0.12 across all warehouses and sales channels, indicating a standardized pricing policy across the supply chain.
 
-- Total Orders per Warehouse
-- Total Quantity Processed
-- Revenue Contribution
-- Profit Generated
-- Average Discount Offered
-
-Insights:
-- WARE-NMK1003 shows highest order processing.
-- Warehouse-level performance variation highlights optimization opportunities.
-- Discount patterns impact profit margins.
+- **Delivery Efficiency:** The average delivery time of 15.17 days across all channels presents an opportunity for operational improvement, particularly for the Online channel where customer expectations for faster delivery are higher.
 
 ---
 
-## 🛒 Sales Channel Analysis
+## Tools and Technologies
 
-The dashboard compares performance across:
-
-- In-Store
-- Online
-- Distributor
-- Wholesale
-
-Key Observations:
-- In-Store contributes the highest total revenue.
-- Online channel shows strong competitive performance.
-- Distributor and Wholesale channels maintain stable contributions.
-- Average discount across channels: 12%
+- **Power BI Desktop** — Dashboard design, data modeling, and interactive reporting
+- **Microsoft Excel** — Data preprocessing and cleaning
+- **DAX (Data Analysis Expressions)** — Calculated measures for revenue, profit, and order aggregations
 
 ---
 
-## 📊 Orders Distribution
+## Visualizations Included
 
-### Orders by Warehouse
-Visual breakdown of order distribution across multiple warehouses to evaluate operational load balance.
-
-### Orders by Sales Channel
-Comparison of channel-wise contribution to total order volume.
-
-### Monthly Orders Trend
-- Clear upward trend from mid-year.
-- Strong Q3 & Q4 order growth.
-- Indicates improved supply chain efficiency and demand surge.
+- KPI Cards for Total Revenue, Total Profit, Average Profit, Total Units Sold, and Average Delivery Days
+- Line Chart for Monthly Revenue Trend (January to December)
+- Donut Chart for Orders by Warehouse distribution
+- Donut Chart for Orders by Sales Channel distribution
+- Bar Chart for Monthly Order Count
+- Detailed Table — Warehouse Insights (Orders, Quantity, Revenue, Profit, Discount)
+- Detailed Table — Sales Channel Insights (Orders, Quantity, Revenue, Profit, Discount)
 
 ---
 
-## 🛠 Tools & Technologies Used
+## Dataset
 
-- Microsoft Power BI
-- Power Query (ETL & Data Cleaning)
-- DAX (Data Analysis Expressions)
-- Data Modeling & Relationship Design
-- KPI Card Visualizations
-- Donut Charts, Bar Charts, Line Charts
-- Tabular Performance Reports
+- **Domain:** Supply Chain and Retail Operations
+- **Records:** 7,991 orders across 6 warehouses and 4 sales channels
+- **Key Fields:** Warehouse ID, Sales Channel, Order Number, Order Date, Revenue, Profit, Quantity, Discount, Delivery Days
 
 ---
 
-## 🔄 Data Preparation & Modeling
+## Project Structure
 
-1. Imported structured transactional dataset.
-2. Cleaned and transformed data using Power Query.
-3. Created calculated measures using DAX for:
-   - Total Revenue
-   - Total Profit
-   - Average Profit
-   - Unit Sold
-   - Delivery Days
-4. Established relationships between warehouse, sales, and time tables.
-5. Designed business-focused dashboard layout.
+```
+Supply-Chain-Management/
+│
+├── SupplyChain_Dashboard.pbix         # Power BI report file
+├── dashboard_screenshot.png           # Dashboard preview image
+└── README.md                          # Project documentation
+```
 
 ---
 
-## 📈 Business Insights Generated
+## Dashboard Preview
 
-- Q3 and Q4 show peak operational performance.
-- In-Store channel drives majority revenue.
-- Certain warehouses significantly outperform others.
-- Average delivery time maintained at 15 days.
-- Discount consistency maintained at ~12% across channels.
+![Supply Chain Management Dashboard](dashboard_screenshot.png)
 
 ---
 
-## 🚀 How to Use
+## Author
 
-1. Download `dashboard_2.pbix`.
-2. Open using Microsoft Power BI Desktop.
-3. Interact with filters and visuals.
-4. Drill into warehouse or channel-level insights.
-
----
-
-## 🧠 Skills Demonstrated
-
-- Supply Chain Analytics
-- Business Intelligence Reporting
-- Data Cleaning & Transformation
-- Advanced DAX Measures
-- Operational KPI Monitoring
-- Data Storytelling
-- Dashboard Design & UX Structuring
+**Tharun Kumar Srinivasan**  
+Aspiring Data Analyst | Power BI | SQL | Python  
+[LinkedIn](https://www.linkedin.com/in/tharunkumarsrini/) | [GitHub](https://github.com/Tharun-Design)
 
 ---
 
-## 📬 Author
+## License
 
-**Tharun Kumar S**  
-AI & DS Engineering Student  
-Aspiring Data Analyst | Business Intelligence Enthusiast
+This project is intended for educational and portfolio purposes only. The dataset used does not represent any proprietary or confidential business data.
